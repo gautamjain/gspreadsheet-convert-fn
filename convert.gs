@@ -3,6 +3,10 @@
 //   fromUnits: units of fromQty (e.g. USD, gallons, meters)
 //   toUnits: units of result (e.g. INR, ml, yards)
 function convert(fromQty, fromUnits, toUnits) {
+  // If cell is blank, return nothing
+  if (fromQty == "") return;
+
+  // Fetch conversion
   var q = 'http://www.google.com/ig/calculator?hl=en&q='+ fromQty + fromUnits + '=?' + toUnits;
   var response = UrlFetchApp.fetch(q).getContentText();
   
