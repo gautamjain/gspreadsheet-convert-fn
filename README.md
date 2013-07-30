@@ -1,7 +1,7 @@
 gspreadsheet-convert-fn
 =======================
 
-A custom **'convert'** function for Google Docs/Spreadsheets that simplifies unit conversions. Supports currencies, length, volume, etc.  
+A custom **'convert'** function for Google Docs/Spreadsheets that simplifies unit conversions. Supports currencies, length, volume, time, etc.  
 
 ###Usage
 Use in a Google Spreadsheet the same way you enter any other formula into a cell.
@@ -19,6 +19,8 @@ Use in a Google Spreadsheet the same way you enter any other formula into a cell
 =convert(2, "gal", "L")
 
 =convert(50, "USD", "INR")
+
+=convert(3, "months", "days")
 
 =convert(10, "ft", "yard")
 ```
